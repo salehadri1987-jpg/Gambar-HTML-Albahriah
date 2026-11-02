@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Editor Jurnal</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; padding: 20px; display: flex; justify-content: center; }
+        .form-container { background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        h2 { text-align: center; color: #333; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        input[type="text"], input[type="email"], select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #007bff; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Pendaftaran Editor Jurnal</h2>
+    
+    <!-- PENTING: Ganti URL action di bawah ini dengan URL dari Formspree Anda! -->
+    <form action="PASTE_URL_FORMSPREE_ANDA_DI_SINI" method="POST">
+        
+        <div class="form-group">
+            <label for="nama">Nama Lengkap & Gelar:</label>
+            <input type="text" id="nama" name="Nama_Lengkap" required placeholder="Contoh: Dr. Nama Anda, M.Pd.">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="Email_Pendaftar" required placeholder="nama@univ.ac.id">
+        </div>
+
+        <div class="form-group">
+            <label for="afiliasi">Afiliasi / Instansi Asal:</label>
+            <input type="text" id="afiliasi" name="Afiliasi_Instansi" required placeholder="Universitas / Lembaga">
+        </div>
+
+        <div class="form-group">
+            <label for="scopus">Link URL Scopus / Google Scholar ID:</label>
+            <input type="text" id="scopus" name="Link_Profil_Scholar" placeholder="https://google.com?...">
+        </div>
+
+        <div class="form-group">
+            <label for="bidang">Bidang Keahlian (Kepakaran):</label>
+            <textarea id="bidang" name="Bidang_Keahlian" rows="3" required placeholder="Contoh: Pendidikan, Teknologi Informasi, Hukum, dll."></textarea>
+        </div>
+
+        <button type="submit">Kirim Undangan Pendaftaran</button>
+    </form>
+</div>
+
+</body>
+</html>
 
